@@ -1,0 +1,272 @@
+@import url(./fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Rubik';
+    background: #F1F1F1;
+}
+
+.button {
+    width: 211px;
+    height: 33px;
+    background-color: #3FA5D5;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    font-family: 'Rubik';
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+
+}
+
+/* === HEADER START === */
+
+
+/* Aside -Start */
+
+.header__aside {
+    width: 90px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background:white;
+    padding: 20px;
+    position: fixed ;
+    overflow: hidden;
+    transition: .2s linear;
+}
+.header__aside:hover{
+    width: 234px;
+    transition: .2s linear;
+
+}
+
+.header__aside:hover .header__aside-analytics{
+
+   animation: aylansin 2s infinite linear;
+}
+
+.header__aside-analytics {
+    font-size: 60px;
+    color: #2A86B1;
+    animation: aylansin 2s infinite linear;
+}
+
+@keyframes aylansin {
+    From {
+        transform: rotate(0deg);
+    }
+
+    To {
+        transform: rotate(360deg);
+    }
+}
+
+.header__list li{
+    margin-top: 60px;
+    
+
+}
+
+.header__list li a i{
+    font-size: 40px;
+    margin-right: 30px;
+}
+
+.header__list li a{
+    color: #939393;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s linear;
+}
+
+.header__list li a:hover{
+    color: #2aa0d7;
+    transition: .2s linear;
+}
+
+/* Aside - End */
+
+/* === HEADER END === */
+
+
+/* === Main START === */
+
+/* Welcome - Start */
+
+.welcome{
+    padding-top: 30px;
+}
+
+.welcome__content {
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    height: 500px;
+    padding: 60px;
+    background-image: url(../img/welcome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: cover;
+    width: 100%;
+    
+}
+
+.welcome__title{
+    color: #464748;
+    font-size: 50px;
+    width: 332px;
+}
+
+
+.welcome__text {
+    color: #696868;
+    font-size: 16px;
+    width: 314px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+/* Welcome - End */
+
+/* Blocks - Start */
+
+.blocks {
+     margin-top: 30px;
+}
+
+.blocks__content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blocks__content-block{
+    width: 255px;
+    height: 338px;background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.blocks__content-block-title{
+    color: #2A86B1;
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.blocks__content-block-icon {
+    color: #2A86B1;
+    font-size: 100px;
+
+}
+
+/* Blocks - End */
+
+/* Lorem - Start */
+
+.lorem{
+    margin-top: 50px;
+}
+
+.lorem__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.lorem__info-title{
+    color: #686868;
+    font-size: 20px;
+    
+    
+}
+
+
+.lorem__info-text {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+
+}
+
+.lorem__info-text:nth-of-type(2){
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lorem__dolor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lorem__dolor-block{
+    width: 255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+.lorem__dolor-block-info{
+    margin-left: 15px;
+}
+
+.lorem__dolor-block-info-title{
+    color: #323232;
+    font-size: 17px;
+}
+
+
+.lorem__dolor-block-info-text{
+    color: #323232;
+    font-size: 14px;
+}
+
+
+/* Lorem - End */
+
+
+
+/* ===Main END === */
